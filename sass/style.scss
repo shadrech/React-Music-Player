@@ -19,42 +19,62 @@ body, .container {
 		background-repeat: no-repeat;
 		background-image:url(/assets/svg/icons.png);
 	}
+	.download {
+		width:26px; 
+		height:34px; 
+		background-position: -129px -0px;
+	}
 	.fast_forward {
-		width:71px;
-		height:34px;
-		background-position: -0px -132px;
+		width:71px; 
+		height:34px; 
+		background-position: -0px -34px;
 	}
 	.headphones {
-		width:39px;
-		height:32px;
-		background-position: -59px -0px;
+		width:39px; 
+		height:32px; 
+		background-position: -90px -0px;
+	}
+	.pause {
+		width:50px; 
+		height:67px; 
+		background-position: -188px -34px;
 	}
 	.play {
-		width:66px;
-		height:66px;
-		background-position: -0px -32px;
+		width:66px; 
+		height:66px; 
+		background-position: -122px -34px;
 	}
 	.rewind {
-		width:70px;
-		height:34px;
-		background-position: -0px -98px;
+		width:70px; 
+		height:34px; 
+		background-position: -155px -0px;
+	}
+	.show_playlist {
+		width:51px; 
+		height:44px;
+		background-position: -71px -34px;
+		display: none;
 	}
 	.user_icon {
-		width:30px;
-		height:30px;
-		background-position: -29px -0px;
+		width:30px; 
+		height:30px; 
+		background-position: -60px -0px;
 	}
 	.volume {
 		width:29px; 
-		height:26px;
+		height:26px; 
 		background-position: -0px -0px;
+	}
+	.volume_off {
+		width:31px; 
+		height:27px; 
+		background-position: -29px -0px;
 	}
 
 	.container-bg {
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		background: url(/assets/img/running.jpg);
 		background-size: cover;
 		z-index: -1;
 		filter: blur(15px);
@@ -74,6 +94,7 @@ body, .container {
 		justify-content: center;
 		align-items: center;
 		height: 100%;
+		flex-direction: row;
 		//box-sizing: border-box;
 		
 		.song_info {
@@ -88,7 +109,7 @@ body, .container {
 
 		.section {
 			// border: green 1px solid;
-			flex: 0 1 400px;
+			width: 400px;
 			height: 600px;
 			display: flex;
 			flex-direction: column;
@@ -99,7 +120,7 @@ body, .container {
 			}
 			/* left artwork section */
 			.art {
-				flex: 0 1 400px;
+				flex: 2 1 400px;
 				max-height: 400px;
 
 				img {
@@ -107,32 +128,43 @@ body, .container {
 				}
 			}
 			.slider {
-				flex: 0 2 30px;
+				max-height: 30px !important;
 				position: relative;
+				display: block;
+				
+				.player-wrapper {
+					&.noUi-target {
+					    border-radius: 0;
+						border: none;
+	    				box-shadow: none;
+	    				background: $app-red;
+	    				height: 30px;
 
-				.slider-fg {
-					position: absolute;
-					height: 100%;
-					width: 10%;
-					background: #A94434;
-					z-index: 2;
-				}
-				.slider-bg {
-					position: absolute;
-					height: 100%;
-					width: 100%;
-					background: #BD958E;
-					z-index: 1;
+	    				.noUi-base {
+	    					.noUi-origin {
+	    						background: $app-red-light;
+	    						width: auto;
+	    						height: auto;
+							    right: 0;
+							    top: 0;
+							    bottom: 0;
+	    						.noUi-handle {
+			    					display: none;
+			    				}
+	    					}
+	    				}
+					}
 				}
 			}
 			.controls {
+				flex: 2 1 auto;
 				background: #060202;
 				background: linear-gradient($yellowGradient, $blackGradient);
 				overflow: hidden;
 				position: relative;
 
 				.song_info {
-					position: absolute;
+					position: relative;
 					width: 100%;
 					font-family: textFont;
 					text-align: center;
@@ -153,14 +185,19 @@ body, .container {
 					}
 				}
 				.media_icons {
-					position: absolute;
+					position: relative;
 					width: 100%;
 					bottom: 7px;
 					text-align: center;
+					z-index: 10;
 					
 					.icon_sprite {
 						vertical-align: middle;
 						transform: scale(0.6);
+
+						&:hover {
+							cursor: pointer;
+						}
 
 						@include margin-sides(-6px);
 					}
@@ -170,13 +207,18 @@ body, .container {
 					.play {
 						
 					}
+					.pause {
+						@include margin-sides(2px);
+						height: 66px;
+						display: inline-block;
+					}
 					.fast_forward {
 						
 					}
-					.volume {
+					.volume, .volume_off {
 						position: absolute;
-						right: 0;
-						margin-right: 10px;
+						left: 0;
+						margin-left: 10px;
 						top: 50%;
     					transform: translateY(-50%) scale(0.6);
 					}
@@ -188,6 +230,8 @@ body, .container {
 					font-family: timerFont;
 					font-size: 180px;
 					font-weight: bold;
+					letter-spacing: 5px;
+					bottom: -65px;
 				}
 			}
 			/* right playlist section */
@@ -195,7 +239,10 @@ body, .container {
 				flex: 0 0 80px;
 				background: linear-gradient($yellowGradient, $blackGradient);
 				font-family: textFont2;
-
+				
+				.playlist_close {
+					display: none;
+				}
 				p {
 					margin: 0;
 				}
@@ -207,7 +254,7 @@ body, .container {
 
 					* {
 						display: inline-block;
-						padding: 5px 0 5px 0;
+						margin: 5px 0 5px 0;
 					}
 					p {
 						font-size: 14px;
@@ -240,6 +287,7 @@ body, .container {
 				flex: 1 1 auto;
 				background: rgba(189, 149, 142, 0.2);
 				overflow-y: scroll;
+				-webkit-overflow-scrolling: touch;
 
 				.song {
 					width: 100%;
@@ -254,12 +302,30 @@ body, .container {
 
 					.icon {
 						height: 100%;
-
+						
+						.icon_sprite {
+							cursor: pointer;
+						}
 						.headphones {
-							position: relative;
+							position: absolute;
 							top: 50%;
-							transform: scale(0.7) translateY(-50%);
+							transform: scale(0.6) translateY(-50%);
 							margin-left: 10px;
+						}
+						.pause {
+							position: absolute;
+							top: 57%;
+							transform: translateY(-50%) scale(0.3);
+							margin-left: 3px;
+						}
+						.download-wrapper {
+							margin: 0;
+						}
+						.download {
+							position: absolute;
+						    transform: scale(0.6) translateY(-50%);
+						    top: 50%;
+						    margin-left: 50px;
 						}
 					}
 					.song_info {
@@ -268,12 +334,13 @@ body, .container {
 					    right: 90px;
 					    top: 50%;
 					    transform: translateY(-50%);
+					    margin-left: 80px;
 
 						.title {
-							font-size: 19px;
+							font-size: 17px;
 						}
 						.artist {
-							font-size: 16px;
+							font-size: 15px;
 						}
 					}
 					.artwork {
@@ -313,4 +380,73 @@ body, .container {
 		}
 	}
 
+	@include mobile {
+
+		.show_playlist {
+			display: inline-block;
+		    right: 0;
+		    position: absolute;
+		    bottom: 0;
+		    transform: scale(0.7) !important;
+		}
+		
+		.flex-container {
+			width: 200vw;
+			
+			.section {
+				width: 100vw;
+				height: 100%;
+
+				//left section
+				.art {
+					width: 100vw;
+					text-align: center;
+					max-height: 50vh;
+
+					img {
+						width: 40vh;
+					    margin-top: calc(10vh * .5);
+					}	
+				}
+
+				.controls {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-around;
+
+					.media_icons {
+						bottom: 20px;
+						.icon_sprite {
+						    transform: scale(0.9);
+						    margin-left: 8px;
+						    margin-right: 8px;
+						}
+					}
+
+					.timer {
+						font-size: 200px;
+					}
+				}
+
+				.user_info {
+					.playlist_close {
+						display: inline-block;
+						position: absolute;
+						margin: 5px 0 5px 10px;
+						color: white;
+						font-family: "Arial";
+					}
+				}
+			}
+			
+			.controls_section {
+				transition: margin 0.4s ease-out;
+			}
+
+			.section_playlist {
+				// position: absolute;
+			}
+
+		}
+	}
 }

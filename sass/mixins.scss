@@ -7,3 +7,9 @@
 	margin-top: $space;
 	margin-bottom: $space;
 }
+
+@mixin mobile {
+  @media all and (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
