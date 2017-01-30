@@ -1,7 +1,7 @@
-var webpack = require('webpack');
+var webpack = require("webpack");
 
 var config = {
-  devtool: 'eval-source-map',
+  devtool: "eval-source-map",
   entry:  __dirname + "/js/App.js",
   output: {
     path: __dirname + "/public",
@@ -10,11 +10,11 @@ var config = {
   module: {
     rules: [{
       test: /\.jsx?$/,
-      exclude: /node_modules/,
+      exclude: "node_modules/",
       use: {
-        loader: 'babel-loader',
+        loader: "babel-loader",
         options: {
-          presets: ['es2015','react']
+          presets: ["es2015","react"]
         }
       }
     }, {
@@ -33,14 +33,14 @@ var config = {
 }
 
 /* If bundling for production, optimize output, no sourcemaps */
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === "production") {
   delete config.devtool;
 
   config.plugins = [
     //https://facebook.github.io/react/docs/optimizing-performance.html#use-the-production-build
     new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: JSON.stringify('production')
+      "process.env": {
+        NODE_ENV: JSON.stringify("production")
       }
     }),
     new webpack.optimize.UglifyJsPlugin({

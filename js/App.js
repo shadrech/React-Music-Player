@@ -30,11 +30,6 @@ class App extends React.Component {
 		fetch("/assets/data/songs.json")
 		.then((response) => response.json())
 		.then((responseData) => {
-			responseData = responseData.map((song) => {
-				song.howl = null;
-				return song;
-			});
-
 			this.setState({
 				songs: responseData,
 				activeSong: responseData[0],
@@ -70,7 +65,7 @@ class App extends React.Component {
 		this.setState({showPlaylist: !this.state.showPlaylist});
 	}
 
-	//========================> Media Controls
+	// Media Controls
 	timeUpdateCallback() {
 		let player = this.state.player;
 
@@ -174,4 +169,4 @@ class App extends React.Component {
 	}
 }
 
-render(<App />, document.querySelector('#root'));
+render(<App />, document.querySelector("#root"));

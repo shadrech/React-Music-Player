@@ -1,0 +1,24 @@
+/* ----------------------------------------------------
+   created with http://www.codeandweb.com/texturepacker 
+   ----------------------------------------------------
+   $TexturePacker:SmartUpdate:bd4970108d02d946e74ea59cd9f5b0c3:3a134816170e7fa664fd552ad932d1f6:d7364bfc47a7b1dfcab2488d13a33d53$
+   ----------------------------------------------------
+
+   usage: <span class="{-spritename-} sprite"></span>
+
+   replace {-spritename-} with the sprite you like to use
+
+*/
+
+.sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(icons.png);}
+
+.download {width:26px; height:34px; background-position: -129px -0px}
+.fast_forward {width:71px; height:34px; background-position: -0px -34px}
+.headphones {width:39px; height:32px; background-position: -90px -0px}
+.pause {width:50px; height:67px; background-position: -188px -34px}
+.play {width:66px; height:66px; background-position: -122px -34px}
+.rewind {width:70px; height:34px; background-position: -155px -0px}
+.show_playlist {width:51px; height:44px; background-position: -71px -34px}
+.user_icon {width:30px; height:30px; background-position: -60px -0px}
+.volume {width:29px; height:26px; background-position: -0px -0px}
+.volume_off {width:31px; height:27px; background-position: -29px -0px}
