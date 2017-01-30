@@ -15,7 +15,7 @@ $ npm start
 
 Go to "http://localhost:8080" in your browser to view app
 
- ## Improvements
+## Improvements
 
- This was a basic implementation which can be improved (feel free to submit PR!). I'm considering doing a video tutorial series where I'll build current app from scratch. I'll then extend it to include functionality to add new songs and update songs.json file, implement Redux for state management and so on. Will see how much free time I have and whether this repo gains any interest.
- I'll upload the Sketch file of the app onto my dribble account soon
+This was a basic implementation which can be improved (feel free to submit PR!). I'm considering doing a video tutorial series where I'll build current app from scratch. I'll then extend it to include functionality to add new songs and update songs.json file, implement Redux for state management and so on. Will see how much free time I have and whether this repo gains any interest.
+I'll upload the Sketch file of the app onto my dribble account soon
