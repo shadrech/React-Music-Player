@@ -11,7 +11,7 @@ First install npm packages boot up start webpack-dev-server
 ```bash
 $ npm install
 $ npm start
-``
+```
 
 Go to "http://localhost:8080" in your browser to view app
 
