@@ -1,0 +1,9 @@
+@mixin margin-sides($space) {
+	margin-left: $space;
+	margin-right: $space;
+}
+
+@mixin margin-top-bottom($space) {
+	margin-top: $space;
+	margin-bottom: $space;
+}
