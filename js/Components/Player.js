@@ -49,7 +49,7 @@ class Player {
 	_initHowl(songObj) {
 		var self = this;
 		var path = songObj.file_path;
-		var path2 = path.substr(0, path.indexOf(".")) + ".ogg";
+		var path2 = path.substr(0, path.indexOf(".")) + ".ogg"; //for browsers which don't support .mp3
 
 		return new Howl({
 			src: [path, path2],

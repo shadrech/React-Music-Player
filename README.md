@@ -1,6 +1,6 @@
 #React Music Player
 
-This is a React music player I created after learning React. You can view a live demo [here](http://tatenda.info/react-music-player/index.html) where I used random instrumentals and album covers which I have designed for clients in the past. See also [behance page](https://www.behance.net/gallery/48137829/Music-Player-App)
+This is a React music player I created after learning React. You can view a live demo [here](http://tatenda.info/react-music-player/index.html) where I used random instrumentals with album artwork which I have designed for clients in the past. See also [behance page](https://www.behance.net/gallery/48137829/Music-Player-App)
 
 ## Getting up and running
 
