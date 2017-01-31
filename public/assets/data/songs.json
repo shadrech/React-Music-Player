@@ -4,7 +4,7 @@
 		"title": "I Will Stay",
 		"artist": "Zoe Grace",
 		"album": "I Will Stay - Single",
-		"file_path": "assets/data/songs/sampleTrack1.mp3",
+		"file_path": "/assets/data/songs/sampleTrack1.mp3",
 		"art_path": "/assets/img/i_will_stay.jpg",
 		"dur": 115
 	},
@@ -13,7 +13,7 @@
 		"title": "Running",
 		"artist": "Zoe Grace",
 		"album": "Running - Single",
-		"file_path": "assets/data/songs/sampleTrack2.mp3",
+		"file_path": "/assets/data/songs/sampleTrack2.mp3",
 		"art_path": "/assets/img/running.jpg",
 		"dur": 102
 	},
@@ -22,7 +22,7 @@
 		"title": "Something Amazing",
 		"artist": "Zoe Grace",
 		"album": "I Will Stay EP",
-		"file_path": "assets/data/songs/sampleTrack3.mp3",
+		"file_path": "/assets/data/songs/sampleTrack3.mp3",
 		"art_path": "/assets/img/i_will_stay_ep.jpg",
 		"dur": 85
 	},
@@ -31,7 +31,7 @@
 		"title": "I Will Stay",
 		"artist": "Zoe Grace",
 		"album": "I Will Stay EP",
-		"file_path": "assets/data/songs/sampleTrack4.mp3",
+		"file_path": "/assets/data/songs/sampleTrack4.mp3",
 		"art_path": "/assets/img/i_will_stay_ep.jpg",
 		"dur": 117
 	},
@@ -40,7 +40,7 @@
 		"title": "Heavens Joy",
 		"artist": "Rejoice Chikosi",
 		"album": "Heavens Joy",
-		"file_path": "assets/data/songs/sampleTrack5.mp3",
+		"file_path": "/assets/data/songs/sampleTrack5.mp3",
 		"art_path": "/assets/img/heaven_joy.jpg",
 		"dur": 107
 	},
@@ -48,9 +48,9 @@
 		"id": 6,
 		"title": "Grateful",
 		"artist": "Rejoice Chikosi",
-		"album": "Heavens Joy",
-		"file_path": "assets/data/songs/sampleTrack6.mp3",
-		"art_path": "/assets/img/heaven_joy.jpg",
+		"album": "Heavens Joy - Gold Edition",
+		"file_path": "/assets/data/songs/sampleTrack6.mp3",
+		"art_path": "/assets/img/heaven_joy2.jpg",
 		"dur": 78
 	},
 	{
@@ -58,7 +58,7 @@
 		"title": "Running Again",
 		"artist": "Zoe Grace",
 		"album": "Running - Single",
-		"file_path": "assets/data/songs/sampleTrack7.mp3",
+		"file_path": "/assets/data/songs/sampleTrack7.mp3",
 		"art_path": "/assets/img/running.jpg",
 		"dur": 75
 	},
@@ -67,7 +67,7 @@
 		"title": "Running After You",
 		"artist": "Zoe Grace",
 		"album": "Running - Single",
-		"file_path": "assets/data/songs/sampleTrack8.mp3",
+		"file_path": "/assets/data/songs/sampleTrack8.mp3",
 		"art_path": "/assets/img/running.jpg",
 		"dur": 97
 	},
@@ -76,7 +76,7 @@
 		"title": "Heavens Joy",
 		"artist": "Rejoice Chikosi",
 		"album": "Heavens Joy - Gold Edition",
-		"file_path": "assets/data/songs/sampleTrack9.mp3",
+		"file_path": "/assets/data/songs/sampleTrack9.mp3",
 		"art_path": "/assets/img/heaven_joy.jpg",
 		"dur": 100
 	}

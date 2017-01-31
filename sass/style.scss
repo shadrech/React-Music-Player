@@ -103,7 +103,7 @@ body, .container {
 				margin: 0;
 			}
 			.title {
-				color: #BD958E;
+				color: $app-blue;
 			}
 		}
 
@@ -137,12 +137,12 @@ body, .container {
 					    border-radius: 0;
 						border: none;
 	    				box-shadow: none;
-	    				background: $app-red;
+	    				background: $app-blue-light;
 	    				height: 30px;
 
 	    				.noUi-base {
 	    					.noUi-origin {
-	    						background: $app-red-light;
+	    						background: $app-blue-dark;
 	    						width: auto;
 	    						height: auto;
 							    right: 0;
@@ -173,7 +173,7 @@ body, .container {
 					}
 
 					.title {
-						color: #BD958E;
+						color: $app-brownish;
 						font-size: 25px;
 						margin-top: 15px;
 					}
@@ -279,7 +279,7 @@ body, .container {
 						font-weight: bold;
 						padding: 5px 0 10px 0;
 						font-size: 25px;
-						color: #F8ECD0;
+						color: $app-brownish;
 					}
 				}
 			}

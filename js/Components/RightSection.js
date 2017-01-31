@@ -18,12 +18,12 @@ class RightSection extends Component {
 				<div className="row user_info">
 					<h1 className="playlist_close" onClick={this.props.togglePlaylist}>X</h1>
 					<div className="profile">
-						<p>Guest User</p>
+						<p>Tatenda Chawanzwa</p>
 						<span className="icon_sprite user_icon"></span>
 					</div>
 					<div className="divider"></div>
 					<div className="playlist_name">
-						<p>Easter 2016 Playlist</p>
+						<p>My Playlist</p>
 					</div>
 				</div>
 				<div className="row playlist">
