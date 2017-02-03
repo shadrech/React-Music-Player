@@ -1,6 +1,6 @@
 #React Music Player
 
-This is a React music player I created after learning React. You can view a live demo [here](http://tatenda.info/react-music-player/index.html) where I used random instrumentals with album artwork which I have designed for clients in the past. See also [behance page](https://www.behance.net/gallery/48137829/Music-Player-App)
+This is a simple music player created using React.js. You can view a live demo [here](http://tatenda.info/react-music-player/index.html) where I used random instrumentals with album artwork which I have designed for clients in the past. See also [behance page](https://www.behance.net/gallery/48137829/Music-Player-App)
 
 ## Getting up and running
 
@@ -18,4 +18,4 @@ Go to "http://localhost:8080" in your browser to view app
 ## Improvements
 
 This was a basic implementation which can be improved (feel free to submit PR!). I'm considering doing a video tutorial series where I'll build current app from scratch. I'll then extend it to include functionality to add new songs, implement Redux for state management and so on. Will see how much free time I have and whether this repo gains any interest.
-I'll upload the Sketch file of the app onto my dribble account soon (still a Prospect on dribble, so please if you already have an invite [draft me into the family ;)](https://dribbble.com/shadrech)
+I'll upload the Sketch file of the app onto my dribble account soon (still a Prospect on dribble, so please if you already have an invite [draft me into the family ;)](https://dribbble.com/shadrech))
